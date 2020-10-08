@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import Sidebar from './Sidebar'
-import Feed from './Feed';
-import Widgets from './Widgets'
-import Login from './Login'
+import Header from './components/Header';
+import Sidebar from './components/Sidebar'
+import Feed from './components/Feed';
+import Widgets from './components/Widgets'
+import Login from './components/Login'
 import { useStateValue } from './StateProvider';
 
 function App() {

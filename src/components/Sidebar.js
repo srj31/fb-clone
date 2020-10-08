@@ -7,7 +7,7 @@ import PeopleIcon from '@material-ui/icons/People'
 import ChatIcon from '@material-ui/icons/Chat'
 import StorefrontIcont from '@material-ui/icons/Storefront'
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'
-import { useStateValue } from './StateProvider'
+import { useStateValue } from '../StateProvider'
 
 function Sidebar() {
     const [{user},dispatch] = useStateValue();
