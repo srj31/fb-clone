@@ -14,9 +14,8 @@ function Post({profilePic, image,username,timestamp,message}) {
                 <Avatar src={profilePic} className='post__avatar' />
                 <div className="post__topInfo">
                     <h3>{username}</h3>
-                    <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
+                    <p>{new Date(parseInt(timestamp)).toUTCString()}</p>
                 </div>
-               
             </div>
             <div className="post__bottom">
                  <p>{message}</p>
@@ -25,7 +24,7 @@ function Post({profilePic, image,username,timestamp,message}) {
                 {
                     image ? (
                         <div className="post__image">
-                            <img src={image} />
+                            <img src={`http://localhost:9000/retrieve/images/single?name=${image}`} alt="link not working"/>
                         </div>
                     ) : (
                             console.log('DEBUG >>> no image here')
